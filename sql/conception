@@ -1,0 +1,24 @@
+-nom
+-siege
+-objet
+-telephone
+-email
+-nif
+-ns
+-rcs
+-imagenif
+-imagercs
+-imagens
+-capital
+-tenue_compte(Ariary)
+-nb employe
+-telecopie
+description : iddescripton, description
+informations : idinfo, iddescripton, valeur, created_at
+dirigeant: id, nom , date, email
+exercice: idexercice, debut
+devise: iddevise,nom
+devisequivalence: idquivalence, iddevise, taux,date
+compte: idcompte,numero,libelle,ecriture
+tiers: idtiers,idcompte,nom
+journal: idjournal,code,nom,date

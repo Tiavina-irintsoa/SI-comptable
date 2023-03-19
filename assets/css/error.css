@@ -1,0 +1,10 @@
+#erreur{
+    margin-top: 1vh;
+    color: red;
+    font-size: smaller;
+}
+#message{
+    margin-top: 1vh;
+    color: green;
+    font-size: smaller;
+}

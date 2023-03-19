@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire compte</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <main>
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-start">
+                <h4 class="font-weight-bolder">Ajouter un compte</h4>
+                <p class="mb-0">Entrez un numero de compte et un libelle</p>
+              </div>
+              <div class="card-body">
+                <form action="compte/add" method="post" id="demo-form" data-parsley-validation-threshold="5">
+                  <div class="mb-3">
+                    <input type="text" name="numero" id="numero" class="form-control form-control-lg" placeholder="Numero de compte" aria-label="Numero" required maxlength="5">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" name="libelle" id="libelle" class="form-control form-control-lg" placeholder="Libelle" required>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Valider</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/parsley.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('#demo-form').parsley().on('field:validated', function() {
+        var ok = $('.parsley-error').length === 0;
+        $('.bs-callout-info').toggleClass('hidden', !ok);
+        $('.bs-callout-warning').toggleClass('hidden', ok);
+      })
+      .on('form:submit', function() {
+        return false; // Don't submit form for this demo
+      });
+    });
+  </script>
+</body>
+</html>
