@@ -1,0 +1,170 @@
+:root{
+    --green:#5e72e4;
+    --grey:#ddd8d8;
+    --grey2:#ccc8c8;
+    --semiwhite:#f1f1f1;
+    --black:#333;
+}
+body , *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    /* background: green; */
+}
+
+.formulaire form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-right:20px;
+    width: 100%;
+}
+  
+  .formulaire form #next {
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: Bahnschrift;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .formulaire form #back {
+    background: var(--grey);
+    color: var(--black);
+    border: none;
+    border-radius: 25px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: Bahnschrift;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .form-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+}
+form {
+    margin-bottom: 70px;
+}
+
+
+header{
+    height: 20%;
+    /* background: blue; */
+    background: white;
+    font-family: Bahnschrift;
+    font-size: 30px;
+    border-bottom: 3px solid var(--semiwhite);
+    display: flex;
+    align-items: flex-end;
+}
+.logo{
+    padding: 20px;
+    color: var(--green);
+}
+footer{
+    height: 20%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    width: 100%;
+}
+footer a{
+    border-radius: 25px;
+    margin: 50px;
+    padding: 15px;
+    text-decoration: none;
+    font-family: Bahnschrift;
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+footer #next{
+    background: var(--green);
+    color: white;
+}
+footer #back{
+    background: var(--grey);
+    color: var(--black);
+}
+footer #next{
+    background: var(--green);
+    color: white;
+}
+.container{
+    min-height: 50%;
+    padding-top: 20px; padding-bottom: 20px;
+    padding-left: 5%; padding-right: 5%;
+    font-family: Bahnschrift;
+    font-weight: 300;
+    width: 100%;
+}
+.formulaire .page{
+    color: var(--grey2);    
+    margin-bottom:20px ;
+}
+.formulaire .title{
+    font-size: 2em;
+    font-family: serif;
+    font-weight: 520;
+    margin-bottom:30px ;
+}
+.formulaire .description{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom:20px ;
+}
+.formulaire form{
+    width: 100%;
+}
+
+
+
+.formulaire form .form-group {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formulaire form .form-group input{
+    border-radius: 20px;
+    padding: 10px;
+    color: #333;
+    outline: none;
+    font-weight: 400;
+    font-size: 15px;
+    border: 3px solid var(--semiwhite);
+    width: 65%;
+    margin-bottom: 20px;
+}
+.form-buttons {
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  
+  input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+  width: 80%;
+}
+

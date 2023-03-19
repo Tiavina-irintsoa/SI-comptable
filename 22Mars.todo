@@ -1,0 +1,32 @@
+
+Tiers:
+	- Compte general 1 -> plusieurs comptes tiers
+	- Raha mbola tsisy ilay compte dia manontany hoe ampidirina sa tsia
+	- select compte afaka asiana tiers : 40,41,45,46
+	- par ordre alphabetique
+Compte:
+	- tsy afaka fafana raha misy ecriture
+	- 5 chiffres
+	- CSV
+Journal:
+	- Tsy afafka fafana raha misy ecriture
+Ecriture:
+	- tsy maintsy mibalance
+	-ampidirina:
+		- libelle:35 caracteres
+		- piece de caisse (select code) 
+		- date
+		- compte miexiste raha tsy miexiste
+		- input recherche dynamique + input pour ajouter
+		- credit/debit
+		- devise (ajax pour verifier si le taux est mis a jour)
+	- tsy maintsy anaty exercice
+	- CSV
+Grand livre:
+	- par compte
+	- compte tiers
+	- date
+Balance:
+	- compte general
+	- solde
+
